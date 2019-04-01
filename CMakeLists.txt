@@ -9,9 +9,6 @@ catkin_simple(ALL_DEPS_REQUIRED)
 
 include(ExternalProject)
 
-set(APPROXMVBB_CATKIN_INCLUDE ${CATKIN_DEVEL_PREFIX}/include/${PROJECT_NAME})
-file(MAKE_DIRECTORY ${APPROXMVBB_CATKIN_INCLUDE})
-
 ExternalProject_Add(approxmvbb_src
   GIT_REPOSITORY  https://github.com/gabyx/ApproxMVBB.git
   GIT_TAG master
