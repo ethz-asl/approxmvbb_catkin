@@ -21,4 +21,4 @@ cs_add_library(${PROJECT_NAME} src/dependency_tracker.cc)
 add_dependencies(${PROJECT_NAME} approxmvbb_src)
 
 cs_install()
-cs_export()
+cs_export(CFG_EXTRAS extras.cmake)
