@@ -10,8 +10,8 @@ catkin_simple(ALL_DEPS_REQUIRED)
 include(ExternalProject)
 
 ExternalProject_Add(approxmvbb_src
-  GIT_REPOSITORY  https://github.com/ethz-asl/ApproxMVBB.git
-  GIT_TAG gsm_bbox
+  GIT_REPOSITORY  https://github.com/gabyx/ApproxMVBB.git
+  GIT_TAG e3375fbb81f877405c95d59152c327dc92b05688
   UPDATE_COMMAND ""
   CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CATKIN_DEVEL_PREFIX}
              -DCMAKE_BUILD_TYPE:STRING=${CMAKE_BUILD_TYPE}
